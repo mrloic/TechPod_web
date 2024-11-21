@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Управление задачами</title>
+  <link rel="stylesheet" href="./media/style/style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="profile-icon" id="profile-icon">
+      <img src="./media/img/profile.png" alt="">
+    </a>
+    <input type="text" placeholder="Hinted search text" class="search-bar" />
+    <button class="add-task-btn" id="mainAddBtn">+</button>
+  </header>
+
+  <main class="kanban">
+    <div class="column">
+      <h2>Неразобранные</h2>
+      <button class="add-task-btn">+</button>
+      <div class="tasks" id="backlog"></div>
+    </div>
+
+    <div class="column">
+      <h2>Выполняется</h2>
+      <button class="add-task-btn">+</button>
+      <div class="tasks"></div>
+    </div>
+
+    <div class="column">
+      <h2>Готово</h2>
+      <button class="add-task-btn">+</button>
+      <div class="tasks"></div>
+    </div>
+  </main>
+
+
+
+
+    <!-- Модальное окно -->
+    <div class="modal" id="taskModal">
+      <div class="modal-content">
+        <button class="close-modal" id="closeModal">×</button>
+        <h2>Добавить задачу</h2>
+        <form id="taskForm">
+          <input type="text" placeholder="ID предмета" name="id" required />
+          <input type="text" placeholder="Название предмета" name="title" required />
+          <select class="broken-select">
+            <option value="" selected="" disabled="">Выберите вид поломки</option>
+            <option value="1">Не работает интернет</option>
+            <option value="2">Не работает экран</option>
+            <option value="3">Сломался стул</option>
+            <option value="4">Другое</option>
+          </select>
+          <!-- <input type="text" placeholder="Вид поломки" name="type" required /> -->
+          <textarea placeholder="Описание" name="description"></textarea>
+  
+          <label class="upload-btn">
+            Добавить фото
+            <input type="file" id="fileInput" accept="image/*" />
+          </label>
+          <img id="preview" src="" alt="Предпросмотр" />
+  
+          <button type="submit" class="submit-btn">✔</button>
+        </form>
+      </div>
+    </div>
+
+
+  <script src="./media/script/script.js"></script>
+</body>
+</html>
