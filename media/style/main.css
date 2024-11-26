@@ -47,15 +47,14 @@ div.header {
 .search_bar {
     display: flex;
     position: absolute;
-    left: 50vw;
+    left: 40vw;
+    align-items: center;
 }
 
 a.search_btn {
     position: absolute;
-    top: 6px;
-    /* left: 7px; */
-    right: 4px;
-    /* left: 8.5vw; */
+    top: 11px;
+    right: 52px;
     z-index: 999;
 }
 
