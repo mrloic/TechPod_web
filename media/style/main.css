@@ -74,3 +74,8 @@ input.search_input:hover,  input.search_input:focus {
     border-color: #313131;
 }
 
+.logo_r {
+    position: absolute;
+    right: 10px;
+}
+
