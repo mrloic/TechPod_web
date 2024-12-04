@@ -28,7 +28,7 @@ div.header {
     display: flex;
     background-color: #4A4A4A;
     width: 100%;
-    height: 100px;
+    height: 80px;
     justify-items: center;
     align-items: center;
 }
@@ -56,6 +56,7 @@ a.search_btn {
     top: 11px;
     right: 52px;
     z-index: 999;
+    cursor: pointer;
 }
 
 input.search_input {
@@ -74,8 +75,30 @@ input.search_input:hover,  input.search_input:focus {
     border-color: #313131;
 }
 
-.logo_r {
-    position: absolute;
-    right: 10px;
+.add_card_btn {
+    cursor: pointer;
 }
 
+.logo_r {
+    position: absolute;
+    right: 30px;
+}
+
+.logo_r > a > img:hover {
+    content: url(../img/logo_12.svg);
+}
+
+img.logo {
+    width: 55px;
+}
+
+.main {
+
+}
+
+.boardsContainer {
+    margin-top: 20px;
+    background-color: #535353;
+    overflow: auto;
+    min-height: 300px;
+}
